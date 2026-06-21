@@ -1,0 +1,20 @@
+# Forenzic AI – Backend Requirements
+# =====================================
+# Core API framework
+fastapi>=0.100.0
+uvicorn>=0.22.0
+python-multipart>=0.0.6
+
+# Image processing
+pillow>=9.5.0
+opencv-python-headless>=4.7.0
+numpy>=1.24.0
+
+# Data validation
+pydantic>=2.0
+
+# ── Hugging Face AI Model (replaces TensorFlow / MobileNetV2) ──────────────
+# Vision Transformer pipeline for AI-generated vs real image detection
+transformers>=4.35.0
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch>=2.0.0                 # CPU build is sufficient; no GPU required
